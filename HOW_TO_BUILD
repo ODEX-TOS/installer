@@ -1,0 +1,10 @@
+* Since august 23 2019 we're only keeping needed/specific files to build calamares, so the build process is done by PKGBUILD. makepkg is responsible to merge our config files with latest calamares source
+The current PKGBUILD can be accessed at https://github.com/endeavouros-team/PKGBUILDS/tree/master/Calamares_current
+
+To have all functionalities be sure to install:
+
+sudo pacman -S lsb-release cmake qt5-svg qt5-webengine yaml-cpp extra-cmake-modules boost networkmanager upower kcoreaddons kconfig ki18n kservice kwidgetsaddons kpmcore squashfs-tools rsync cryptsetup qt5-xmlpatterns doxygen dmidecode gptfdisk hwinfo kparts parted polkit-qt5 python qt5ct solid git qt5-tools pythonqt --needed
+
+To use for endeavour, portergos or reborn just edit the line `branding: endeavouros` accordingly at settings.conf
+
+Build requires the script `/usr/bin/cleaner_script.sh` (configurated at shellprocess module) to detect which distro is running and run some final fixes.
