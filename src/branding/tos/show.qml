@@ -25,14 +25,14 @@ Presentation
     id: presentation
 
     function nextSlide() {
-        console.log("Next slide");
+        console.log("QML Component (default slideshow) Next slide");
         presentation.goToNextSlide();
     }
 
     Timer {
         id: advanceTimer
-        interval: 10000
-        running: running: presentation.activatedInCalamares
+        interval: 1000
+        running: presentation.activatedInCalamares
         repeat: true
         onTriggered: nextSlide()
     }
@@ -40,237 +40,47 @@ Presentation
     Slide {
 
         Image {
-            id: background_1
-            source: "language.png"
-            width: 617; height: 430
+            id: background
+            source: "random1.png"
+            width: 200; height: 200
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
         }
-
+        Text {
+            anchors.horizontalCenter: background.horizontalCenter
+            anchors.top: background.bottom
+            text: "This is a customizable QML slideshow.<br/>"+
+                  "Distributions should provide their own slideshow and list it in <br/>"+
+                  "their custom branding.desc file.<br/>"+
+                  "To create a Calamares presentation in QML, import calamares.slideshow,<br/>"+
+                  "define a Presentation element with as many Slide elements as needed."
+            wrapMode: Text.WordWrap
+            width: presentation.width
+            horizontalAlignment: Text.Center
+        }
     }
 
     Slide {
-
-        Image {
-            id: background_2
-            source: "language.png"
-            width: 617; height: 430
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-
-    }
-    Slide {
-
-        Image {
-            id: background_3
-            source: "random1.jpg"
-            width: 617; height: 430
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-
+        centeredText: qsTr("This is a second Slide element.")
     }
 
     Slide {
-
-        Image {
-            id: background_4
-            source: "random2.jpg"
-            width: 617; height: 430
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-
+        centeredText: qsTr("This is a third Slide element.")
     }
 
-    Slide {
-
-        Image {
-            id: background_5
-            source: "random3.jpg"
-            width: 617; height: 430
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-
+    // When this slideshow is loaded as a V1 slideshow, only
+    // activatedInCalamares is set, which starts the timer (see above).
+    //
+    // In V2, also the onActivate() and onLeave() methods are called.
+    // These example functions log a message (and re-start the slides
+    // from the first).
+    function onActivate() {
+        console.log("QML Component (default slideshow) activated");
+        presentation.currentSlide = 0;
     }
-
-    Slide {
-
-        Image {
-            id: background_6
-            source: "random4.jpg"
-            width: 617; height: 430
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-
-    }
-
-    Slide {
-
-        Image {
-            id: background_7
-            source: "random5.jpg"
-            width: 617; height: 430
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-
-    }
-
-    Slide {
-
-        Image {
-            id: background_8
-            source: "random6.jpg"
-            width: 617; height: 430
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-
-    }
-
-    Slide {
-
-        Image {
-            id: background_9
-            source: "ThankYou.jpg"
-            width: 617; height: 430
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-
-    }
-
-        Slide {
-
-        Image {
-            id: background_10
-            source: "TOS-installer-1.jpg"
-            width: 617; height: 430
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-
-    }
-
-            Slide {
-
-        Image {
-            id: background_11
-            source: "TOS-installer-2.jpg"
-            width: 617; height: 430
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-
-    }
-
-
-            Slide {
-
-        Image {
-            id: background_11
-            source: "ThankYou.jpg"
-            width: 617; height: 430
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-
-    }
-
-
-            Slide {
-
-        Image {
-            id: background_13
-            source: "TOS-installer-3.jpg"
-            width: 617; height: 430
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-
-    }
-
-            Slide {
-
-        Image {
-            id: background_14
-            source: "TOS-installer-4.jpg"
-            width: 617; height: 430
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-
-    }
-
-            Slide {
-
-        Image {
-            id: background_15
-            source: "TOS-installer-5.jpg"
-            width: 617; height: 430
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-
-    }
-
-            Slide {
-
-        Image {
-            id: background_16
-            source: "TOS-installer-6.jpg"
-            width: 617; height: 430
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-
-    }
-
-            Slide {
-
-        Image {
-            id: background_17
-            source: "TOS-installer-7.jpg"
-            width: 617; height: 430
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-
-    }
-
-            Slide {
-
-        Image {
-            id: background_18
-            source: "TOS-installer-8.jpg"
-            width: 617; height: 430
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-
-    }
-
-            Slide {
-
-        Image {
-            id: background_19
-            source: "TOS-installer-9.jpg"
-            width: 617; height: 430
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-
-    }
-
-
     
-
-    Component.onCompleted: {
-        advanceTimer.running = true;
-        console.log("Component complete");
+    function onLeave() {
+        console.log("QML Component (default slideshow) deactivated");
     }
+
 }
