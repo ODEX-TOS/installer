@@ -1,5 +1,6 @@
 # Maintainers: Portergos Linux <portergoslinux@gmail.com>
 # Maintainers: TOS Linux <tom@odex.be>
+# python-qt should be installed from the aur (and Boost.python in pip install pyboost)
 
 pkgname=installer
 _reponame=calamares
@@ -41,7 +42,8 @@ depends=(
     python
     qt5ct
     solid
-    qt5-tools)
+    qt5-tools
+    libpwquality)
 
 provides=("${pkgname}")
 options=(!strip !emptydirs)
@@ -71,6 +73,8 @@ prepare() {
     cp $pkgname/src/modules/packages/packages.conf_offline $_reponame/src/modules/packages/packages.conf
     cp $pkgname/settings.conf_offline                      $_reponame/settings.conf
     cp $pkgname/src/modules/welcome/welcome.conf_offline   $_reponame/src/modules/welcome/welcome.conf 
+    cp -r $pkgname/src/modules/*                           $_reponame/src/modules/
+
 
     mkdir -p $_reponame/build/$pkgname
 
@@ -102,6 +106,7 @@ package() {
     cp -r $pkgname/settings.conf_{on,off}line                      $_reponame/build/$pkgname/usr/share/calamares/
     cp -r $pkgname/src/modules/welcome/welcome.conf_{on,off}line   $_reponame/build/$pkgname/usr/share/calamares/modules/
     cp -r $pkgname/src/modules/packages/packages.conf_{on,off}line $_reponame/build/$pkgname/usr/share/calamares/modules/
+
 
     # Commom install -D doen't work
     cp -r "${srcdir}/${_reponame}/build/$pkgname/"* "${pkgdir}${destdir}"
