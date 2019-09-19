@@ -40,6 +40,18 @@ Presentation
     Slide {
 
         Image {
+            id: background_1
+            source: "language.png"
+            width: 617; height: 430
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
+        }
+
+    }
+
+    Slide {
+
+        Image {
             id: background_2
             source: "language.png"
             width: 617; height: 430
