@@ -103,7 +103,7 @@ slideshow:               "show.qml"
 #      onLeave() in the root object. After the installation is done,
 #      the show is stopped (first by calling onLeave(), then destroying
 #      the QML components).
-slideshowAPI: 1
+slideshowAPI: 2
 
 # Colors for text and background components.
 #
