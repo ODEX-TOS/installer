@@ -70,10 +70,11 @@ prepare() {
     fi
 
     # Build proccess can't understand our personal files, so we adjust here
+    cp -r $pkgname/src/modules/*                           $_reponame/src/modules/
+
     cp $pkgname/src/modules/packages/packages.conf_offline $_reponame/src/modules/packages/packages.conf
     cp $pkgname/settings.conf_offline                      $_reponame/settings.conf
     cp $pkgname/src/modules/welcome/welcome.conf_offline   $_reponame/src/modules/welcome/welcome.conf 
-    cp -r $pkgname/src/modules/*                           $_reponame/src/modules/
 
 
     mkdir -p $_reponame/build/$pkgname
