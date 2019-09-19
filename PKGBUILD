@@ -66,7 +66,6 @@ prepare() {
             # rm $_reponame-$pkgver.tar.gz
             mv $_reponame-$pkgver $_reponame
             rsync -va $pkgname/* $_reponame
-            rm -rf $pkgname
     fi
 
     # Build proccess can't understand our personal files, so we adjust here
