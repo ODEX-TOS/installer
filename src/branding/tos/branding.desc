@@ -87,7 +87,7 @@ strings:
 # These strings can also use substitutions from os-release (see above).
 images:
     productLogo:         "logo.png"
-    productIcon:         "icon.png"
+    productIcon:         "logo.png"
     productWelcome:      "language.png"
 
 # The slideshow is displayed during execution steps (e.g. when the
