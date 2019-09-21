@@ -114,6 +114,7 @@ sequence:
   - luksopenswaphookcfg
 #  - dracutlukscfg
 #  - plymouthcfg
+  - rmkernel
   - initcpiocfg
   - initcpio
   - removeuser
