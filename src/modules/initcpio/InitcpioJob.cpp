@@ -74,7 +74,7 @@ InitcpioJob::exec()
 
     cDebug() << "Updating initramfs with kernel" << m_kernel;
     auto r = CalamaresUtils::System::instance()->targetEnvCommand(
-        { "mkinitcpio", "-P" }, QString(), QString() /* no timeout , 0 */ );
+        { "mkinitcpio", "-P" }, "linux", QString() /* no timeout , 0 */ );
     return r.explainProcess( "mkinitcpio", std::chrono::seconds( 10 ) /* fake timeout */ );
 }
 
