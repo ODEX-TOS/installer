@@ -41,7 +41,7 @@ Presentation
 
         Image {
             id: background
-            source: "random1.png"
+            source: "random1.jpg"
             width: 200; height: 200
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
