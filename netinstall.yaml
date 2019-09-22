@@ -53,6 +53,7 @@
     - zsh-syntax-highlighting
     - xorg
     - tlp
+    - tos-grub-theme
 
 - name: "I3-Desktop"
   description: "i3 desktop - Tiling window manager"
@@ -144,6 +145,7 @@
     - python-dbus
     - xorg
     - tlp
+    - tos-grub-theme
 
 - name: "Printing-Support"
   description: "Support for printing (Cups)"
@@ -217,3 +219,4 @@
     - ttf-dejavu
     - python-dbus
     - tlp
+    - tos-grub-theme
