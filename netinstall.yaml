@@ -51,6 +51,8 @@
     - zsh
     - zsh-autosuggestions
     - zsh-syntax-highlighting
+    - xorg
+
 - name: "I3-Desktop"
   description: "i3 desktop - Tiling window manager"
   hidden: false
@@ -139,6 +141,7 @@
     - bdf-unifont
     - ttf-dejavu
     - python-dbus
+    - xorg
 
 - name: "Printing-Support"
   description: "Support for printing (Cups)"
