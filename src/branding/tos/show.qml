@@ -26,16 +26,12 @@ Presentation
 
     function nextSlide() {
         console.log("QML Component (default slideshow) Next slide");
-        presentation.currentSlide += 1;
-        if (presentation.currentSlide > 3){
-            presentation.currentSlide = 0;
-        }
     }
 
     Timer {
         id: advanceTimer
         interval: 1000
-        running: presentation.activatedInCalamares
+        running: true
         repeat: true
         onTriggered: nextSlide()
     }
