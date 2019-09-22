@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# Made by fernandomaroto for EndeavourOS and Portergos.
+# Update tos operating system settings
 # Should work in any arch-based distros
 # Trying K.I.S.S filosophy
 
@@ -77,7 +77,7 @@ def run():
     except:
         pass
 
-    # Install base system + endeavouros packages + copy necessary config files
+    # Install base system + tos i3/kde packages + copy necessary config files
 
     PACSTRAP = "/usr/bin/pacstrap -c"
     PACKAGES = "base sudo grub tos-grub-theme vim zsh"
