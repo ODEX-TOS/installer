@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# Made by fernandomaroto for EndeavourOS and Portergos.
+# Pacstrap TOS
 # Should work in any arch-based distros
 # Trying K.I.S.S filosophy
 
