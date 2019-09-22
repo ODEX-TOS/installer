@@ -26,7 +26,10 @@ Presentation
 
     function nextSlide() {
         console.log("QML Component (default slideshow) Next slide");
-        presentation.goToNextSlide();
+        presentation.currentSlide += 1;
+        if (presentation.currentSlide > 3){
+            presentation.currentSlide = 0;
+        }
     }
 
     Timer {
@@ -44,6 +47,10 @@ Presentation
             source: "random1.jpg"
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
+            anchors.topMargin: 50
+            anchors.bottomMargin: 30
+            anchors.leftMargin: 30
+            anchors.rightMargin: 30
         }
         Text {
             anchors.horizontalCenter: background.horizontalCenter
