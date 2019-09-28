@@ -24,58 +24,339 @@ Presentation
 {
     id: presentation
 
-    function nextSlide() {
-        console.log("QML Component (default slideshow) Next slide");
-    }
-
     Timer {
         id: advanceTimer
-        interval: 1000
+        interval: 10000
         running: true
         repeat: true
-        onTriggered: nextSlide()
+        onTriggered: presentation.goToNextSlide()
     }
 
     Slide {
-
         Image {
-            id: background
+            id: background1
             source: "random1.jpg"
+            width: 800; height: 440
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
-            anchors.topMargin: 50
-            anchors.bottomMargin: 30
-            anchors.leftMargin: 30
-            anchors.rightMargin: 30
         }
         Text {
-            anchors.horizontalCenter: background.horizontalCenter
-            anchors.top: background.bottom
-            text: "This is a customizable QML slideshow.<br/>"+
-                  "Distributions should provide their own slideshow and list it in <br/>"+
-                  "their custom branding.desc file.<br/>"+
-                  "To create a Calamares presentation in QML, import calamares.slideshow,<br/>"+
-                  "define a Presentation element with as many Slide elements as needed."
+            anchors.horizontalCenter: background1.horizontalCenter
+            anchors.top: background1.bottom
+            text: ""
             wrapMode: Text.WordWrap
-            width: presentation.width
+            width: 800
             horizontalAlignment: Text.Center
         }
     }
 
     Slide {
-        centeredText: qsTr("This is a second Slide element.")
+        Image {
+            id: background2
+            source: "TOS-installer-1.jpg"
+            width: 800; height: 440
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
+        }
+        Text {
+            anchors.horizontalCenter: background2.horizontalCenter
+            anchors.top: background2.bottom
+            text: ""
+            wrapMode: Text.WordWrap
+            width: 800
+            horizontalAlignment: Text.Center
+        }
     }
 
     Slide {
-        centeredText: qsTr("This is a third Slide element.")
+        Image {
+            id: background3
+            source: "random2.jpg"
+            width: 800; height: 440
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
+        }
+        Text {
+            anchors.horizontalCenter: background3.horizontalCenter
+            anchors.top: background3.bottom
+            text: ""
+            wrapMode: Text.WordWrap
+            width: 800
+            horizontalAlignment: Text.Center
+        }
     }
 
-    // When this slideshow is loaded as a V1 slideshow, only
-    // activatedInCalamares is set, which starts the timer (see above).
-    //
-    // In V2, also the onActivate() and onLeave() methods are called.
-    // These example functions log a message (and re-start the slides
-    // from the first).
+    Slide {
+        Image {
+            id: background4
+            source: "TOS-installer-2.jpg"
+            width: 800; height: 440
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
+        }
+        Text {
+            anchors.horizontalCenter: background4.horizontalCenter
+            anchors.top: background4.bottom
+            text: ""
+            wrapMode: Text.WordWrap
+            width: 800
+            horizontalAlignment: Text.Center
+        }
+    }
+
+    Slide {
+        Image {
+            id: background5
+            source: "random3.jpg"
+            width: 800; height: 440
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
+        }
+        Text {
+            anchors.horizontalCenter: background5.horizontalCenter
+            anchors.top: background5.bottom
+            text: ""
+            wrapMode: Text.WordWrap
+            width: 800
+            horizontalAlignment: Text.Center
+        }
+    }
+
+    Slide {
+        Image {
+            id: background6
+            source: "TOS-installer-3.jpg"
+            width: 800; height: 440
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
+        }
+        Text {
+            anchors.horizontalCenter: background6.horizontalCenter
+            anchors.top: background6.bottom
+            text: ""
+            wrapMode: Text.WordWrap
+            width: 800
+            horizontalAlignment: Text.Center
+        }
+    }
+
+    Slide {
+        Image {
+            id: background7
+            source: "random4.jpg"
+            width: 800; height: 440
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
+        }
+        Text {
+            anchors.horizontalCenter: background7.horizontalCenter
+            anchors.top: background7.bottom
+            text: ""
+            wrapMode: Text.WordWrap
+            width: 800
+            horizontalAlignment: Text.Center
+        }
+    }
+
+    Slide {
+        Image {
+            id: background8
+            source: "TOS-installer-4.jpg"
+            width: 800; height: 440
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
+        }
+        Text {
+            anchors.horizontalCenter: background8.horizontalCenter
+            anchors.top: background8.bottom
+            text: ""
+            wrapMode: Text.WordWrap
+            width: 800
+            horizontalAlignment: Text.Center
+        }
+    }
+
+    Slide {
+        Image {
+            id: background9
+            source: "random5.jpg"
+            width: 800; height: 440
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
+        }
+        Text {
+            anchors.horizontalCenter: background9.horizontalCenter
+            anchors.top: background9.bottom
+            text: ""
+            wrapMode: Text.WordWrap
+            width: 800
+            horizontalAlignment: Text.Center
+        }
+    }
+
+    Slide {
+        Image {
+            id: background10
+            source: "TOS-installer-5.jpg"
+            width: 800; height: 440
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
+        }
+        Text {
+            anchors.horizontalCenter: background10.horizontalCenter
+            anchors.top: background10.bottom
+            text: ""
+            wrapMode: Text.WordWrap
+            width: 800
+            horizontalAlignment: Text.Center
+        }
+    }
+
+    Slide {
+        Image {
+            id: background11
+            source: "random6.jpg"
+            width: 800; height: 440
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
+        }
+        Text {
+            anchors.horizontalCenter: background11.horizontalCenter
+            anchors.top: background11.bottom
+            text: ""
+            wrapMode: Text.WordWrap
+            width: 800
+            horizontalAlignment: Text.Center
+        }
+    }
+
+    Slide {
+        Image {
+            id: background12
+            source: "TOS-installer-6.jpg"
+            width: 800; height: 440
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
+        }
+        Text {
+            anchors.horizontalCenter: background12.horizontalCenter
+            anchors.top: background12.bottom
+            text: ""
+            wrapMode: Text.WordWrap
+            width: 800
+            horizontalAlignment: Text.Center
+        }
+    }
+
+    Slide {
+        Image {
+            id: background13
+            source: "TOS-installer-6.jpg"
+            width: 800; height: 440
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
+        }
+        Text {
+            anchors.horizontalCenter: background13.horizontalCenter
+            anchors.top: background13.bottom
+            text: ""
+            wrapMode: Text.WordWrap
+            width: 800
+            horizontalAlignment: Text.Center
+        }
+    }
+
+    Slide {
+        Image {
+            id: background14
+            source: "ThankYou.jpg"
+            width: 800; height: 440
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
+        }
+        Text {
+            anchors.horizontalCenter: background14.horizontalCenter
+            anchors.top: background14.bottom
+            text: ""
+            wrapMode: Text.WordWrap
+            width: 800
+            horizontalAlignment: Text.Center
+        }
+    }
+
+    Slide {
+        Image {
+            id: background15
+            source: "TOS-installer-7.jpg"
+            width: 800; height: 440
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
+        }
+        Text {
+            anchors.horizontalCenter: background15.horizontalCenter
+            anchors.top: background15.bottom
+            text: ""
+            wrapMode: Text.WordWrap
+            width: 800
+            horizontalAlignment: Text.Center
+        }
+    }
+
+    Slide {
+        Image {
+            id: background16
+            source: "TOS-installer-8.jpg"
+            width: 800; height: 440
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
+        }
+        Text {
+            anchors.horizontalCenter: background16.horizontalCenter
+            anchors.top: background16.bottom
+            text: ""
+            wrapMode: Text.WordWrap
+            width: 800
+            horizontalAlignment: Text.Center
+        }
+    }
+
+    Slide {
+        Image {
+            id: background17
+            source: "TOS-installer-9.jpg"
+            width: 800; height: 440
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
+        }
+        Text {
+            anchors.horizontalCenter: background17.horizontalCenter
+            anchors.top: background17.bottom
+            text: ""
+            wrapMode: Text.WordWrap
+            width: 800
+            horizontalAlignment: Text.Center
+        }
+    }
+
+     Slide {
+        Image {
+            id: background18
+            source: "random6.jpg"
+            width: 800; height: 440
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
+        }
+        Text {
+            anchors.horizontalCenter: background18.orizontalCenter
+            anchors.top: background18.bottom
+            text: ""
+            wrapMode: Text.WordWrap
+            width: 800
+            horizontalAlignment: Text.Center
+        }
+    }
+
+
     function onActivate() {
         console.log("QML Component (default slideshow) activated");
         presentation.currentSlide = 0;
