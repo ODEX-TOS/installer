@@ -32,19 +32,10 @@ Presentation
         onTriggered: presentation.goToNextSlide()
     }
 
-    Slide {
-        Image {
-            id: background1
-            source: "random1.jpg"
-            width: presentation.width; height: presentation.height
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-    }
 
     Slide {
         Image {
-            id: background2
+            id: background1
             source: "TOS-installer-1.jpg"
             width: presentation.width; height: presentation.height
             fillMode: Image.PreserveAspectFit
@@ -54,17 +45,7 @@ Presentation
 
     Slide {
         Image {
-            id: background3
-            source: "random2.jpg"
-            width: presentation.width; height: presentation.height
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-    }
-
-    Slide {
-        Image {
-            id: background4
+            id: background2
             source: "TOS-installer-2.jpg"
             width: presentation.width; height: presentation.height
             fillMode: Image.PreserveAspectFit
@@ -72,19 +53,10 @@ Presentation
         }
     }
 
-    Slide {
-        Image {
-            id: background5
-            source: "random3.jpg"
-            width: presentation.width; height: presentation.height
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-    }
 
     Slide {
         Image {
-            id: background6
+            id: background3
             source: "TOS-installer-3.jpg"
             width: presentation.width; height: presentation.height
             fillMode: Image.PreserveAspectFit
@@ -92,19 +64,10 @@ Presentation
         }
     }
 
-    Slide {
-        Image {
-            id: background7
-            source: "random4.jpg"
-            width: presentation.width; height: presentation.height
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-    }
 
     Slide {
         Image {
-            id: background8
+            id: background4
             source: "TOS-installer-4.jpg"
             width: presentation.width; height: presentation.height
             fillMode: Image.PreserveAspectFit
@@ -112,19 +75,10 @@ Presentation
         }
     }
 
-    Slide {
-        Image {
-            id: background9
-            source: "random5.jpg"
-            width: presentation.width; height: presentation.height
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-    }
 
     Slide {
         Image {
-            id: background10
+            id: background5
             source: "TOS-installer-5.jpg"
             width: presentation.width; height: presentation.height
             fillMode: Image.PreserveAspectFit
@@ -134,7 +88,7 @@ Presentation
 
     Slide {
         Image {
-            id: background11
+            id: background6
             source: "random6.jpg"
             width: presentation.width; height: presentation.height
             fillMode: Image.PreserveAspectFit
@@ -142,9 +96,10 @@ Presentation
         }
     }
 
+
     Slide {
         Image {
-            id: background12
+            id: background7
             source: "TOS-installer-6.jpg"
             width: presentation.width; height: presentation.height
             fillMode: Image.PreserveAspectFit
@@ -152,29 +107,10 @@ Presentation
         }
     }
 
-    Slide {
-        Image {
-            id: background13
-            source: "TOS-installer-6.jpg"
-            width: presentation.width; height: presentation.height
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-    }
 
     Slide {
         Image {
-            id: background14
-            source: "ThankYou.jpg"
-            width: presentation.width; height: presentation.height
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-    }
-
-    Slide {
-        Image {
-            id: background15
+            id: background8
             source: "TOS-installer-7.jpg"
             width: presentation.width; height: presentation.height
             fillMode: Image.PreserveAspectFit
@@ -184,7 +120,7 @@ Presentation
 
     Slide {
         Image {
-            id: background16
+            id: background9
             source: "TOS-installer-8.jpg"
             width: presentation.width; height: presentation.height
             fillMode: Image.PreserveAspectFit
@@ -194,18 +130,8 @@ Presentation
 
     Slide {
         Image {
-            id: background17
+            id: background10
             source: "TOS-installer-9.jpg"
-            width: presentation.width; height: presentation.height
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-    }
-
-     Slide {
-        Image {
-            id: background18
-            source: "random6.jpg"
             width: presentation.width; height: presentation.height
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
