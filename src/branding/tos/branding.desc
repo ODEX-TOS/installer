@@ -57,12 +57,12 @@ windowExpanding:    normal
 # are not supported (the rest are). Remember to quote the string
 # if it contains substitutions, or you'll get YAML exceptions.
 strings:
-    productName:         TOS
+    productName:         TOS Linux
     shortProductName:    TOS
-    version:             0.4.3
-    shortVersion:        0.4
-    versionedName:       TOS
-    shortVersionedName:  TOS
+    version:             0.5
+    shortVersion:        0.5
+    versionedName:       TOS Linux 0.5 Alpha
+    shortVersionedName:  TOS Linux 0.5
     bootloaderEntryName: TOS
 #    productUrl:          https://tos.pbfp.xyz/
 #    supportUrl:          https://tos.pbfp.xyz/blog
@@ -103,7 +103,7 @@ slideshow:               "show.qml"
 #      onLeave() in the root object. After the installation is done,
 #      the show is stopped (first by calling onLeave(), then destroying
 #      the QML components).
-slideshowAPI: 2
+slideshowAPI: 1
 
 # Colors for text and background components.
 #
