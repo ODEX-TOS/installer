@@ -26,7 +26,7 @@ Presentation
 
     Timer {
         id: advanceTimer
-        interval: 10000
+        interval: 20000
         running: true
         repeat: true
         onTriggered: presentation.goToNextSlide()
@@ -57,27 +57,6 @@ Presentation
     Slide {
         Image {
             id: background3
-            source: "TOS-installer-3.jpg"
-            width: presentation.width; height: presentation.height
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-    }
-
-
-    Slide {
-        Image {
-            id: background4
-            source: "TOS-installer-4.jpg"
-            width: presentation.width; height: presentation.height
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-    }
-
-    Slide {
-        Image {
-            id: background5
             source: "random6.jpg"
             width: presentation.width; height: presentation.height
             fillMode: Image.PreserveAspectFit
