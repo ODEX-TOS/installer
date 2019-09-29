@@ -4,7 +4,9 @@ skip_if_no_internet: false
 update_db: false
 update_system: false
 operations:
-- try_install:
+ - install:
+    - tos-grub-theme
+ - try_install:
   - linux-headers
   - linux-tos-headers
   - linux-firmware
