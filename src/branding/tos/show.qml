@@ -75,63 +75,10 @@ Presentation
         }
     }
 
-
     Slide {
         Image {
             id: background5
-            source: "TOS-installer-5.jpg"
-            width: presentation.width; height: presentation.height
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-    }
-
-    Slide {
-        Image {
-            id: background6
             source: "random6.jpg"
-            width: presentation.width; height: presentation.height
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-    }
-
-
-    Slide {
-        Image {
-            id: background7
-            source: "TOS-installer-6.jpg"
-            width: presentation.width; height: presentation.height
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-    }
-
-
-    Slide {
-        Image {
-            id: background8
-            source: "TOS-installer-7.jpg"
-            width: presentation.width; height: presentation.height
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-    }
-
-    Slide {
-        Image {
-            id: background9
-            source: "TOS-installer-8.jpg"
-            width: presentation.width; height: presentation.height
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-    }
-
-    Slide {
-        Image {
-            id: background10
-            source: "TOS-installer-9.jpg"
             width: presentation.width; height: presentation.height
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
