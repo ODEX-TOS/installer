@@ -6,6 +6,8 @@ update_system: false
 operations:
 - install:
     - tos-grub-theme
+    - lightdm
+    - lightdm-webkit2-tos-greeter
 - try_install:
   - linux-headers
   - linux-tos-headers
