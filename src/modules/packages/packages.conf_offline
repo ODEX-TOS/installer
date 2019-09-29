@@ -153,9 +153,9 @@ update_system: false
 #    - wget
 #    - binutils
 operations:
- - install:
+- install:
     - tos-grub-theme
- - try_remove:
+- try_remove:
   - installer
   - arch-install-scripts
   - qt5-svg
