@@ -121,7 +121,7 @@ sequence:
   - users
   - networkcfg
   - packages
-  - displaymanager
+#  - displaymanager
   - hwclock
 #  - services-systemd
   - shellprocess
