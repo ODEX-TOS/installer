@@ -4,8 +4,8 @@
 
 pkgname=installer
 _reponame=calamares
-pkgver=3.2.12
-pkgrel=7
+pkgver=3.2.13
+pkgrel=6
 pkgdesc="calamares installer for TOS"
 arch=('any')
 url="https://github.com/ODEX-TOS"
@@ -92,7 +92,7 @@ prepare() {
 build() {
 
     cd $_reponame/build
-    cmake .. -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_LIBDIR=/usr/lib -DCMAKE_INSTALL_PREFIX=/usr
+    cmake .. -DBoost_NO_BOOST_CMAKE=ON -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_LIBDIR=/usr/lib -DCMAKE_INSTALL_PREFIX=/usr
     export DESTDIR="$srcdir/$_reponame/build/$pkgname" && make -j4 install
 
 }
