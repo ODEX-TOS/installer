@@ -8,6 +8,7 @@ operations:
     - tos-grub-theme
     - lightdm
     - lightdm-webkit2-tos-greeter
+    - archlinux-keyring
 - try_install:
   - linux-headers
   - linux-tos-headers

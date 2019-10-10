@@ -158,6 +158,7 @@
   critical: false
   packages:
     - awesome
+    - archlinux-keyring
     - i3lock-next-git
     - st-tos
     - bluez
