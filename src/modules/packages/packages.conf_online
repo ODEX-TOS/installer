@@ -4,11 +4,6 @@ skip_if_no_internet: false
 update_db: false
 update_system: false
 operations:
-- install:
-    - tos-grub-theme
-    - lightdm
-    - lightdm-webkit2-tos-greeter
-    - archlinux-keyring
 - try_install:
   - linux-headers
   - linux-tos-headers
