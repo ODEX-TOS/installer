@@ -56,6 +56,8 @@
     - tos-grub-theme
     - xf86-input-synaptic
     - base
+    - linux-firmware
+    - libarchive
 
 - name: "I3-Desktop"
   description: "i3 desktop - Tiling window manager"
@@ -150,6 +152,8 @@
     - tos-grub-theme
     - xf86-input-synaptic
     - base
+    - linux-firmware
+    - libarchive
 
 - name: "Awesome-Desktop"
   description: "awesomewm - Tiling window manager"
@@ -253,6 +257,8 @@
     - acpi
     - redshift
     - maim
+    - linux-firmware
+    - libarchive
 
 - name: "Printing-Support"
   description: "Support for printing (Cups)"
@@ -328,3 +334,5 @@
     - python-dbus
     - tlp
     - tos-grub-theme
+    - linux-firmware
+    - libarchive
