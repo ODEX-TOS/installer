@@ -162,6 +162,7 @@
   critical: false
   packages:
     - awesome
+    - light
     - archlinux-keyring
     - i3lock-next-git
     - st-tos
