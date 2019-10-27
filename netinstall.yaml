@@ -161,7 +161,7 @@
   selected: false
   critical: false
   packages:
-    - awesome
+    - awesome-tos
     - light
     - archlinux-keyring
     - i3lock-next-git
