@@ -9,6 +9,7 @@
     - plasma-wayland-session
     - discover
     - kde-applications
+    - skel
     - powerdevil
     - xdg-user-dirs
     - packagekit-qt5
@@ -68,6 +69,7 @@
     - i3-gaps-tos
     - i3lock-next-git
     - st-tos
+    - skel
     - bluez
     - compton
     - dunst
@@ -166,6 +168,7 @@
     - archlinux-keyring
     - i3lock-next-git
     - st-tos
+    - skel
     - bluez
     - compton
     - dunst
@@ -337,3 +340,4 @@
     - tos-grub-theme
     - linux-firmware
     - libarchive
+    - skel
