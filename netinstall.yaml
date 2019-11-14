@@ -263,6 +263,8 @@
     - maim
     - linux-firmware
     - libarchive
+    - nemo
+    - deepin-system-monitor
 
 - name: "Printing-Support"
   description: "Support for printing (Cups)"
