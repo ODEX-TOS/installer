@@ -164,6 +164,7 @@
   critical: false
   packages:
     - awesome-tos
+    - system-updater
     - light
     - archlinux-keyring
     - i3lock-next-git
