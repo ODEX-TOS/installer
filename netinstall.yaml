@@ -165,6 +165,7 @@
   packages:
     - awesome-tos
     - system-updater
+    - libinput-gestures-tos
     - light
     - archlinux-keyring
     - i3lock-next-git
