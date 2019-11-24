@@ -164,6 +164,7 @@
   critical: false
   packages:
     - awesome-tos
+    - sddm
     - system-updater
     - libinput-gestures-tos
     - light
