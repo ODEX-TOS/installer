@@ -119,7 +119,6 @@ sequence:
   - networkcfg
   - packages
   - removeuser
-  - shellprocess
   - users
   - displaymanager
   - hwclock
