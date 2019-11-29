@@ -81,8 +81,9 @@ def run():
 
     PACSTRAP = "/usr/bin/pacstrap-tos -c"
     PACKAGES = "base sudo grub tos-grub-theme vim zsh systemd"
-    OLD_BASE = "mkinitcpio mkinitcpio-busybox mkinitcpio-nfs-utils cryptsetup device-mapper dhcpcd diffutils e2fsprogs inetutils jfsutils less linux linux-firmware logrotate lvm2 man-db man-pages mdadm nano netctl perl reiserfsprogs s-nail sysfsutils systemd-sysvcompat texinfo usbutils vi which xfsprogs"
+    OLD_BASE = "mkinitcpio mkinitcpio-busybox mkinitcpio-nfs-utils cryptsetup device-mapper dhcpcd diffutils e2fsprogs inetutils jfsutils less linux-tos lvm2 man-db man-pages mdadm nano netctl perl reiserfsprogs s-nail sysfsutils systemd-sysvcompat usbutils which xfsprogs"
     COPY_CMD = "cp -f"
+    COPY_DIR_CMD = "cp -r -f"
     CLEANER_SCRIPT = "/usr/bin/cleanup.sh"
     PACMAN_CONF = "/etc/pacman.conf"
     PACMAN_MIRRORS = "/etc/pacman.d/mirrorlist"
@@ -95,6 +96,8 @@ def run():
     SKEL_FOLDER = "/etc/skel"
     ZSH_PROFILE = "/etc/skel/.zprofile"
     ZSH_RC = "/etc/skel/.zshrc"
+
+
 
     subprocess.call(PACSTRAP.split(' ') + [root_mount_point] + PACKAGES.split(' ') + OLD_BASE.split(' '))
 
@@ -109,3 +112,5 @@ def run():
     subprocess.call(COPY_CMD.split(' ') + [PACMAN_MIRRORS] + [root_mount_point + DEST_MIRRORS])
 
     subprocess.call(COPY_CMD.split(' ') + [ZSH_PROFILE] + [ZSH_RC] + [root_mount_point + SKEL_FOLDER])
+
+

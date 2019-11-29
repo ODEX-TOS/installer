@@ -91,7 +91,7 @@ sequence:
   - locale
   - keyboard
   - partition
-  - netinstall
+#  - netinstall
   - users
 #  - tracking
   - summary
@@ -119,6 +119,7 @@ sequence:
   - networkcfg
   - packages
   - removeuser
+  - shellprocess
   - users
   - displaymanager
   - hwclock
@@ -195,3 +196,4 @@ disable-cancel: false
 #
 # YAML: boolean.
 disable-cancel-during-exec: true
+
