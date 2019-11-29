@@ -79,8 +79,8 @@ def run():
 
     # Install base system + tos i3/kde packages + copy necessary config files
 
-    PACSTRAP = "/usr/bin/pacstrap -c"
-    PACKAGES = "base sudo grub tos-grub-theme vim zsh"
+    PACSTRAP = "/usr/bin/pacstrap-tos -c"
+    PACKAGES = "base sudo grub tos-grub-theme vim zsh systemd"
     OLD_BASE = "mkinitcpio mkinitcpio-busybox mkinitcpio-nfs-utils cryptsetup device-mapper dhcpcd diffutils e2fsprogs inetutils jfsutils less linux linux-firmware logrotate lvm2 man-db man-pages mdadm nano netctl perl reiserfsprogs s-nail sysfsutils systemd-sysvcompat texinfo usbutils vi which xfsprogs"
     COPY_CMD = "cp -f"
     CLEANER_SCRIPT = "/usr/bin/cleanup.sh"
