@@ -84,6 +84,7 @@ def run():
     OLD_BASE = "mkinitcpio mkinitcpio-busybox mkinitcpio-nfs-utils cryptsetup device-mapper dhcpcd diffutils e2fsprogs inetutils jfsutils less linux-tos lvm2 man-db man-pages mdadm nano netctl perl reiserfsprogs s-nail sysfsutils systemd-sysvcompat usbutils which xfsprogs"
     COPY_CMD = "cp -f"
     COPY_DIR_CMD = "cp -r -f"
+    RM_CMD = "rm -f"
     CLEANER_SCRIPT = "/usr/bin/cleanup.sh"
     PACMAN_CONF = "/etc/pacman.conf"
     PACMAN_MIRRORS = "/etc/pacman.d/mirrorlist"
@@ -93,9 +94,8 @@ def run():
     DEST_MIRRORS = "/etc/pacman.d"
     GRUB_CONF = "/etc/default/grub"
     DEST_GRUB = "/etc/default"
-    SKEL_FOLDER = "/etc/skel"
-    ZSH_PROFILE = "/etc/skel/.zprofile"
-    ZSH_RC = "/etc/skel/.zshrc"
+    RM_CLEANUP = "/usr/bin/cleanup.sh"
+
 
 
 
@@ -111,6 +111,8 @@ def run():
 
     subprocess.call(COPY_CMD.split(' ') + [PACMAN_MIRRORS] + [root_mount_point + DEST_MIRRORS])
 
-    subprocess.call(COPY_CMD.split(' ') + [ZSH_PROFILE] + [ZSH_RC] + [root_mount_point + SKEL_FOLDER])
+    subprocess.call(COPY_CMD.split(' ') + [PACMAN_MIRRORS] + [root_mount_point + DEST_MIRRORS])
+
+    subprocess.call(RM_CMD.split(' ') + [root_mount_point + RM_CLEANUP])
 
 
