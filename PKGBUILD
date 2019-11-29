@@ -110,6 +110,6 @@ package() {
 
 
     # Commom install -D doen't work
-    cp -r "${srcdir}/${_reponame}/build/$pkgname/"* "${pkgdir}${destdir}"
+    cp -r "${srcdir}/${_reponame}/build/$pkgname/"* "${pkgdir}"
 
 }
