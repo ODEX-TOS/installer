@@ -104,7 +104,7 @@ sequence:
   - mount
   - pacstrap
 #  - unpackfs
-#  - copy_kernel
+  - copy_kernel
   - machineid
   - fstab
   - locale
@@ -114,13 +114,12 @@ sequence:
   - luksopenswaphookcfg
 #  - dracutlukscfg
 #  - plymouthcfg
-  - rmkernel
   - initcpiocfg
   - initcpio
-  - removeuser
-  - users
   - networkcfg
   - packages
+  - removeuser
+  - users
   - displaymanager
   - hwclock
 #  - services-systemd
