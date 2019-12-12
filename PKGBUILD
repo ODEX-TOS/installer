@@ -106,6 +106,7 @@ package() {
     cp -r $pkgname/settings.conf_{on,off}line                      $_reponame/build/$pkgname/usr/share/calamares/
     cp -r $pkgname/src/modules/welcome/welcome.conf_{on,off}line   $_reponame/build/$pkgname/usr/share/calamares/modules/
     cp -r $pkgname/src/modules/packages/packages.conf_{on,off}line $_reponame/build/$pkgname/usr/share/calamares/modules/
+    cp -r $pkgname/src/modules/packages/packages.conf $_reponame/build/$pkgname/usr/share/calamares/modules/
     install -Dm755 "$srcdir"/installer/pacstrap-tos "$pkgdir"/usr/bin/pacstrap-tos
 
 
