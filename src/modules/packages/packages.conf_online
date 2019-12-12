@@ -154,3 +154,4 @@ operations:
   - zsh
   - zsh-autosuggestions
   - zsh-syntax-highlighting
+  - efibootmgr
