@@ -196,4 +196,6 @@ operations:
   - installer-backend
   - installer-gui
   - installer-curses
+  - amd-ucode
+  - intel-ucode
 

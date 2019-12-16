@@ -155,3 +155,5 @@ operations:
   - zsh-autosuggestions
   - zsh-syntax-highlighting
   - efibootmgr
+  - amd-ucode
+  - intel-ucode
