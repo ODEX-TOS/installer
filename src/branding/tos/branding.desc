@@ -64,10 +64,10 @@ strings:
     versionedName:       TOS Linux 0.5 Alpha
     shortVersionedName:  TOS Linux 0.5
     bootloaderEntryName: TOS
-#    productUrl:          https://tos.pbfp.xyz/
-#    supportUrl:          https://tos.pbfp.xyz/blog
+#    productUrl:          https://tos.odex.be/
+#    supportUrl:          https://tos.odex.be/blog
 #    knownIssuesUrl:      https://github.com/ODEX-TOS/installer/issues
-#    releaseNotesUrl:     https://tos.pbfp.xyz/blog
+#    releaseNotesUrl:     https://tos.odex.be/blog
 
 # These images are loaded from the branding module directory.
 #

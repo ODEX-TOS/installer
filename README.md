@@ -11,7 +11,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/ODEX-TOS/installer">
-    <img src="https://tos.pbfp.xyz/images/logo.svg" alt="Logo" width="150" height="200">
+    <img src="https://tos.odex.be/images/logo.svg" alt="Logo" width="150" height="200">
   </a>
 
   <h3 align="center">GUI Installer</h3>
@@ -109,7 +109,7 @@ calamares
 tos c # if using tos
 ```
 
-_For more examples, please refer to the [Documentation](https://tos.pbfp.xyz/blog)_
+_For more examples, please refer to the [Documentation](https://tos.odex.be/blog)_
 
 
 
@@ -177,4 +177,4 @@ Project Link: [https://github.com/ODEX-TOS/installer](https://github.com/ODEX-TO
 [issues-url]: https://github.com/ODEX-TOS/installer/issues
 [license-shield]: https://img.shields.io/github/license/ODEX-TOS/installer.svg?style=flat-square
 [license-url]: https://github.com/ODEX-TOS/installer/blob/master/LICENSE.txt
-[product-screenshot]: https://tos.pbfp.xyz/images/logo.svg
+[product-screenshot]: https://tos.odex.be/images/logo.svg
