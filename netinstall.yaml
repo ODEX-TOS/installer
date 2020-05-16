@@ -165,7 +165,7 @@
   packages:
     - awesome-tos
     - sddm
-    - filesystem-tos
+    - tos/filesystem
     - system-updater
     - libinput-gestures-tos
     - light
