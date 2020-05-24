@@ -280,6 +280,7 @@ class PMPacman(PackageManager):
         else:
             pacman_flags = "-Syu"
 
+        check_target_env_call(["pacman-key", "--populate", "tos"])
         check_target_env_call(["pacman", pacman_flags,
                                "--noconfirm"] + pkgs)
 
