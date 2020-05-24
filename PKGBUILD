@@ -4,14 +4,14 @@
 
 pkgname=installer
 _reponame=calamares
-pkgver=3.2.17
+pkgver=3.2.20
 pkgrel=6
 pkgdesc="calamares installer for TOS"
 arch=('any')
 url="https://github.com/ODEX-TOS"
 license=('GPL3')
 optdepends=('update-mirrorlist')
-makedepends=('git' 'cmake' 'extra-cmake-modules')
+makedepends=('git' 'cmake' 'extra-cmake-modules' 'kpmcore' 'boost-libs')
 depends=(
     qt5-svg
     qt5-webengine
@@ -71,10 +71,6 @@ prepare() {
     # Build proccess can't understand our personal files, so we adjust here
     cp -r $pkgname/src/modules/*                           $_reponame/src/modules/
 
-    cp $pkgname/src/modules/packages/packages.conf_offline $_reponame/src/modules/packages/packages.conf
-    cp $pkgname/settings.conf_offline                      $_reponame/settings.conf
-    cp $pkgname/src/modules/welcome/welcome.conf_offline   $_reponame/src/modules/welcome/welcome.conf 
-
 
     mkdir -p $_reponame/build/$pkgname
 
@@ -103,9 +99,9 @@ package() {
     # Build proccess can't understand our personal files, so we explicitly copy them here to be packed along calamares files
 
     cp -r $pkgname/src/branding                                    $_reponame/build/$pkgname/usr/share/calamares/
-    cp -r $pkgname/settings.conf_{on,off}line                      $_reponame/build/$pkgname/usr/share/calamares/
-    cp -r $pkgname/src/modules/welcome/welcome.conf_{on,off}line   $_reponame/build/$pkgname/usr/share/calamares/modules/
-    cp -r $pkgname/src/modules/packages/packages.conf_{on,off}line $_reponame/build/$pkgname/usr/share/calamares/modules/
+    cp -r $pkgname/settings.confe                      $_reponame/build/$pkgname/usr/share/calamares/
+    cp -r $pkgname/src/modules/welcome/welcome.conf   $_reponame/build/$pkgname/usr/share/calamares/modules/
+    cp -r $pkgname/src/modules/packages/packages.conf $_reponame/build/$pkgname/usr/share/calamares/modules/
     cp -r $pkgname/src/modules/packages/packages.conf $_reponame/build/$pkgname/usr/share/calamares/modules/
     install -Dm755 "$srcdir"/installer/pacstrap-tos "$pkgdir"/usr/bin/pacstrap-tos
 

@@ -1,0 +1,6 @@
+# Syntax is YAML 1.2
+---
+type:       "job"
+name:       "get_root_username"
+interface:  "python"
+script:     "main.py"

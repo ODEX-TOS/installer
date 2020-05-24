@@ -59,10 +59,10 @@ windowExpanding:    normal
 strings:
     productName:         TOS Linux
     shortProductName:    TOS
-    version:             0.5
-    shortVersion:        0.5
-    versionedName:       TOS Linux 0.5 Alpha
-    shortVersionedName:  TOS Linux 0.5
+    version:             0.6
+    shortVersion:        0.6
+    versionedName:       TOS Linux 0.6 Beta
+    shortVersionedName:  TOS Linux 0.6
     bootloaderEntryName: TOS
 #    productUrl:          https://tos.odex.be/
 #    supportUrl:          https://tos.odex.be/blog
@@ -117,7 +117,7 @@ slideshowAPI: 1
 # branding component also ships a stylesheet.qss. Then they are
 # the corresponding CSS attributes of #sidebarApp.
 style:
-   sidebarBackground:    "#d3d6e6"
+   sidebarBackground:    "#dac5e6"
    sidebarText:          "#000000"
    sidebarTextSelect:    "#ffffff"
-   sidebarTextHighlight: "#7f7fff"
+   sidebarTextHighlight: "#b551fc"
