@@ -99,7 +99,7 @@ package() {
     # Build proccess can't understand our personal files, so we explicitly copy them here to be packed along calamares files
 
     cp -r $pkgname/src/branding                                    $_reponame/build/$pkgname/usr/share/calamares/
-    cp -r $pkgname/settings.confe                      $_reponame/build/$pkgname/usr/share/calamares/
+    cp -r $pkgname/settings.conf                      $_reponame/build/$pkgname/usr/share/calamares/
     cp -r $pkgname/src/modules/welcome/welcome.conf   $_reponame/build/$pkgname/usr/share/calamares/modules/
     cp -r $pkgname/src/modules/packages/packages.conf $_reponame/build/$pkgname/usr/share/calamares/modules/
     cp -r $pkgname/src/modules/packages/packages.conf $_reponame/build/$pkgname/usr/share/calamares/modules/
