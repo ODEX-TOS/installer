@@ -280,8 +280,10 @@ class PMPacman(PackageManager):
         else:
             pacman_flags = "-Syu"
 
-        check_target_env_call(["pacman", pacman_flags,
-                               "--noconfirm"] + pkgs)
+        shell_cmd = "yes | pacman " + pacman_flags + " --noconfirm " + pkgs
+
+        check_target_env_call(["/bin/bash", "-c",
+                               shell_cmd])
 
     def remove(self, pkgs):
         check_target_env_call(["pacman", "-Rs", "--noconfirm"] + pkgs)
