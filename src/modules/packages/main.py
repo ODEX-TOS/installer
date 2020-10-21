@@ -280,7 +280,7 @@ class PMPacman(PackageManager):
         else:
             pacman_flags = "-Syu"
 
-        shell_cmd = "yes | pacman " + pacman_flags + " --noconfirm " + pkgs
+        shell_cmd = "yes | pacman " + pacman_flags + " --noconfirm " + " ".join(pkgs)
 
         check_target_env_call(["/bin/bash", "-c",
                                shell_cmd])
