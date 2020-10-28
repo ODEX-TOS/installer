@@ -30,7 +30,7 @@ def update_db():
     subprocess.call(START_HAVEGED.split(' ')) 
     subprocess.call(PACMAN_INIT.split(' '))  
     subprocess.call(PACMAN_POPULATE.split(' ')) 
-    subprocess.call(PACMAN_REFRESH.split(' '))
+    #subprocess.call(PACMAN_REFRESH.split(' '))
     subprocess.call(STOP_HAVEGED.split(' '))   
 
     # Commands above give us more control and remove the need to use packages module to update db and system.

@@ -20,7 +20,7 @@ def update_db():
     # Populate and refresh keys
     subprocess.call(['chroot'] + [root_mount_point] + PACMAN_INIT.split(' '))  
     subprocess.call(['chroot'] + [root_mount_point] + PACMAN_POPULATE.split(' ')) 
-    subprocess.call(['chroot'] + [root_mount_point] +  PACMAN_REFRESH.split(' '))
+    #subprocess.call(['chroot'] + [root_mount_point] +  PACMAN_REFRESH.split(' '))
 
 def run():
     # Check internet
