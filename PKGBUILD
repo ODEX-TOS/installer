@@ -81,7 +81,7 @@ prepare() {
     sed -i "s?configuration files\" OFF?configuration files\" ON?g"               $_reponame/CMakeLists.txt
     sed -i "s?username: live?username: liveuser?g"                                $_reponame/src/modules/removeuser/removeuser.conf
     sed -i 's/\"mkinitcpio\", \"-p\", m_kernel/\"mkinitcpio\", \"-P\"/'           $_reponame/src/modules/initcpio/InitcpioJob.cpp
-    sed -i "s?./example.sqfs?\"/run/archiso/bootmnt/arch/x86_64/airootfs.sfs\"?g" $_reponame/src/modules/unpackfs/unpackfs.conf
+    sed -i "s?./example.sqfs?\"/run/archiso/bootmnt/tos/x86_64/airootfs.sfs\"?g" $_reponame/src/modules/unpackfs/unpackfs.conf
 
 }
 
