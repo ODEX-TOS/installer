@@ -16,11 +16,11 @@ def run():
     """
     root_mount_point = libcalamares.globalstorage.value("rootMountPoint")
     try:
-     subprocess.check_call(["cp", "/run/archiso/bootmnt/arch/boot/x86_64/vmlinuz", root_mount_point + "/boot/vmlinuz-linux-tos"])
+     subprocess.check_call(["cp", "/run/archiso/bootmnt/tos/boot/x86_64/vmlinuz-linux", root_mount_point + "/boot/vmlinuz-linux-tos"])
     except:
      pass # doing nothing on exception
     try:
-     subprocess.check_call(["cp", "/run/archiso/bootmnt/arch/boot/x86_64/vmlinuz-tos", root_mount_point + "/boot/vmlinuz-linux-tos"])
+     subprocess.check_call(["cp", "/run/archiso/bootmnt/tos/boot/x86_64/vmlinuz-linux-tos", root_mount_point + "/boot/vmlinuz-linux-tos"])
     except:
      pass # doing nothing on exception
 
