@@ -286,7 +286,7 @@ class PMPacman(PackageManager):
                                shell_cmd])
 
     def remove(self, pkgs):
-        check_target_env_call(["pacman", "-Rs", "--noconfirm"] + pkgs)
+        check_target_env_call(["pacman", "-Rns", "--noconfirm"] + pkgs)
 
     def update_db(self):
         check_target_env_call(["pacman", "-Sy"])
