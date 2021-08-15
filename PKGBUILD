@@ -4,7 +4,7 @@
 
 pkgname=installer
 _reponame=calamares
-pkgver=3.2.40
+pkgver=3.2.41.1
 pkgrel=1
 pkgdesc="calamares installer for TOS"
 arch=('any')
