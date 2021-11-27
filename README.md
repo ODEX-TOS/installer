@@ -87,7 +87,7 @@ pip install pyboost
  
 1. Clone the installer
 ```sh
-git clone https:://github.com/ODEX-TOS/installer.git
+git clone https://github.com/ODEX-TOS/installer.git
 ```
 2. Install pyboost
 ```sh
