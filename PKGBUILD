@@ -5,7 +5,7 @@
 pkgname=installer
 _reponame=calamares
 pkgver=3.2.50
-pkgrel=2
+pkgrel=3
 pkgdesc="calamares installer for TOS"
 arch=('any')
 url="https://github.com/ODEX-TOS"
@@ -98,11 +98,13 @@ package() {
     cd $srcdir
     # Build proccess can't understand our personal files, so we explicitly copy them here to be packed along calamares files
 
-    cp -r $pkgname/src/branding                                    $_reponame/build/$pkgname/usr/share/calamares/
-    cp -r $pkgname/settings.conf                      $_reponame/build/$pkgname/usr/share/calamares/
-    cp -r $pkgname/src/modules/welcome/welcome.conf   $_reponame/build/$pkgname/usr/share/calamares/modules/
-    cp -r $pkgname/src/modules/packages/packages.conf $_reponame/build/$pkgname/usr/share/calamares/modules/
-    install -Dm755 "$srcdir"/installer/pacstrap-tos "$pkgdir"/usr/bin/pacstrap-tos
+    cp -r $pkgname/src/branding                                 $_reponame/build/$pkgname/usr/share/calamares/
+    cp -r $pkgname/settings.conf                                $_reponame/build/$pkgname/usr/share/calamares/
+    cp -r $pkgname/src/modules/welcome/welcome.conf             $_reponame/build/$pkgname/usr/share/calamares/modules/
+    cp -r $pkgname/src/modules/packages/packages.conf           $_reponame/build/$pkgname/usr/share/calamares/modules/
+    cp -r $pkgname/src/modules/packagechooser/images            $_reponame/build/$pkgname/usr/lib/calamares/modules/packagechooser
+
+    install -Dm755 "$srcdir"/installer/pacstrap-tos             "$pkgdir"/usr/bin/pacstrap-tos
 
 
     # Commom install -D doen't work
