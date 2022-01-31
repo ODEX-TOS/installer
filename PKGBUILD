@@ -5,7 +5,7 @@
 pkgname=installer
 _reponame=calamares
 pkgver=3.2.50
-pkgrel=1
+pkgrel=2
 pkgdesc="calamares installer for TOS"
 arch=('any')
 url="https://github.com/ODEX-TOS"
