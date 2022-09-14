@@ -4,8 +4,8 @@
 
 pkgname=installer
 _reponame=calamares
-pkgver=3.2.59
-pkgrel=3
+pkgver=3.2.61
+pkgrel=4
 pkgdesc="calamares installer for TOS"
 arch=('any')
 url="https://github.com/ODEX-TOS"
@@ -105,7 +105,7 @@ package() {
     cp -r $pkgname/src/modules/packagechooser/images            $_reponame/build/$pkgname/usr/lib/calamares/modules/packagechooser
 
     install -Dm755 "$srcdir"/installer/pacstrap-tos             "$pkgdir"/usr/bin/pacstrap-tos
-
+    install -Dm755 "$srcdir"/installer/flatpaks.sh              "$pkgdir"/etc/tos/flatpaks.sh
 
     # Commom install -D doen't work
     cp -r "${srcdir}/${_reponame}/build/$pkgname/"* "${pkgdir}"
