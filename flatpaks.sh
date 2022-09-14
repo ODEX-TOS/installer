@@ -6,17 +6,17 @@
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 # Update existing flatpaks
-flatpak update
+flatpak update -y
 
 
 # Now we install all our software
-flatpak install flathub org.gnome.World.PikaBackup # To more easily manage backups
-flatpak install flathub org.gnome.Maps # Gnome's version of google maps
-flatpak install flathub org.gnome.NetworkDisplays # Miracast (And in the future chromecast)
-flatpak install flathub org.gnome.Calendar # Calendar
-flatpak install flathub org.gnome.Contacts # Contacts
-flatpak install flathub org.gnome.Totem # Video's
-flatpak install flathub app.drey.Dialect # Translations
-flatpak install flathub org.gnome.gedit # Text editor
-flatpak install flathub org.gnome.Geary # e-mail client
-flatpak install flathub org.gnome.Weather # Weather app
+flatpak install -y flathub org.gnome.World.PikaBackup # To more easily manage backups
+flatpak install -y flathub org.gnome.Maps # Gnome's version of google maps
+flatpak install -y flathub org.gnome.NetworkDisplays # Miracast (And in the future chromecast)
+flatpak install -y flathub org.gnome.Calendar # Calendar
+flatpak install -y flathub org.gnome.Contacts # Contacts
+flatpak install -y flathub org.gnome.Totem # Video's
+flatpak install -y flathub app.drey.Dialect # Translations
+flatpak install -y flathub org.gnome.gedit # Text editor
+flatpak install -y flathub org.gnome.Geary # e-mail client
+flatpak install -y flathub org.gnome.Weather # Weather app
