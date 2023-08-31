@@ -4,8 +4,8 @@
 
 pkgname=installer
 _reponame=calamares
-pkgver=3.2.61
-pkgrel=5
+pkgver=3.2.62
+pkgrel=1
 pkgdesc="calamares installer for TOS"
 arch=('any')
 url="https://github.com/ODEX-TOS"
@@ -60,7 +60,7 @@ prepare() {
     cd $srcdir
     # tos' calamares is cloned at source variable, the original calamares is wget below
     if [ ! -d $_reponame ]
-        then 
+        then
             # wget https://github.com/calamares/calamares/releases/download/v$pkgver/$_reponame-$pkgver.tar.gz
             # tar -zxvf $_reponame-$pkgver.tar.gz
             # rm $_reponame-$pkgver.tar.gz
